@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Educart</title>
   </head>
   <body>
@@ -21,22 +22,22 @@
 
     <!-- FOR MOBILE PHONES -->
      <!-- ICON -->
-      <ul class="flex justify-evenly fixed bottom-0 w-full bg-gray-500 text-1xl text-white py-2 lg:hidden">
+      <ul class="flex justify-evenly fixed bottom-0 w-full bg-gray-500 text-2xl text-white py-2 lg:hidden">
         <li class="list-none "><a href="#"><i class="fa-solid fa-house"></i></a></li>
         <li class="list-none"><a href="#"><i class="fa-solid fa-school"></i></a></li>
         <li class="list-none"><a href="#"><i class="fa-solid fa-sitemap"></i></a></li>
         <li class="list-none"><a href="# "><i class="fa-solid fa-address-card"></i></a></li>
       </ul>
       <!-- THE HOVER TEXT -->
-    <nav class="hidden lg:flex">
-      <div class="logo">
+    <nav class="flex justify-evenly items-center sticky top-0 bg-white py-2 transition-all">
+      <div class="logo text-xl">
         <a href="">
           <span><i class="fa-solid fa-book-open"></i></span>
           <span>Educare.</span>
         </a>
       </div>
 
-      <div class="">
+      <div class="hidden lg:flex">
         <ul class="">
           <li class="crdmn"><a href="#">Home</a></li>
           <li><a href="#">Courses</a></li>
@@ -45,39 +46,33 @@
         </ul>
       </div>
       <div>
-        <ul class="auth">
-          <li><a href="#">Sign In</a></li>
-          <li class="sngup"><a href="#">Sign Up</a></li>
+        <ul class="auth flex gap-1.5 text-sm">
+          <li class=" hover:text-blue-950"><a href="#">Sign In</a></li>
+          <li class="sngup text-blue-700 hover:text-blue-950"><a href="#">Sign Up</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- THE HERO SECTION -->
-    <section class="hero">
+    <section class="hero flex flex-col-reverse px-3 h-6/6 my-5 text-center">
       <div class="pics">
-        <img
-          src="/img/br_str.png"
-          width="500vw"
-          alt="brush stroke"
-          class="brush_str"
-        />
-        <img src="/img/become_inst.png" alt="pic" width="400vw" class="girl" />
+        <img src="/img/girlf.png" alt="pic" width="400vw" class="girl" />
       </div>
       <div class="text_hero">
-        <div class="f_wel">
-          <h1>
+        <div class="f_wel font-bold">
+          <h1 class="text-[2rem] lg:text-[15rem]">
             We teach to
-            <span class="startbtn">Start <i class="fa-solid fa-arrow-right"></i></span
-            >the eager <br />learners
+            <span class="startbtn text-textcolor bg-bacgroundcolor">Start <i class="fa-solid fa-arrow-right"></i></span
+            > the eager learners
           </h1>
           <div class="lnrux">
-            <p>
+            <p class="font-normal">
               Learn UI/UX designs, Design Systems, design marketing and many
               more. get online certificate. build your career by gaining skills
               and shine
             </p>
             <br />
-            <a href=""
+            <a href="" class="text-blue-700"
               >Learn More <i class="fa-solid fa-arrow-right-long"></i
             ></a>
           </div>
@@ -94,61 +89,61 @@
 
     <!-- START YOUR LEARNING TODAY SECTION -->
 
-    <section class="strtlrn">
+    <section class="strtlrn px-3 py-15  h-6/6 my-15 bg-white">
       <div class="strt_day">
-        <h1>Start your learning today.</h1>
+        <h1 class="text-3xl font-bold w-full uppercase mb-0.5">Start your learning today.</h1>
         <br />
-        <p>
+        <p class="font-normal text-lg mb-8">
           Start your learning today. Explore all the categories and choose what
           the best for you
         </p>
       </div>
 
       <div class="dsgn_dev_market">
-        <ul>
+        <ul class="grid lg:grid-cols-3 gap-8">
           <li>
-            <h1>Design Sector</h1>
-            <p>
+            <h1 class="font-bold text-xl">Design Sector</h1>
+            <p class="w-full font-normal text-lg text-wrap">
               Explore the design sector. Learn UI design , UX design, design
               system, design acceessibility and many more.
             </p>
-            <img src="/img/des_sec.jpg" alt="Design Sector" />
+            <img class="max-w-full rounded-xl object-cover" src="/img/des_sec.jpg" alt="Design Sector" />
           </li>
           <li>
-            <h1>Development Sector</h1>
-            <p>
+            <h1 class="font-bold text-xl">Development Sector</h1>
+            <p class="w-full font-normal text-lg text-wrap">
               Explore the design sector. Learn UI design , UX design, design
               system, design acceessibility and many more.
             </p>
-            <img src="/img/dev_sec.jpg" alt="Design Sector" />
+            <img class="max-w-full rounded-xl object-cover" src="/img/dev_sec.jpg" alt="Design Sector" />
           </li>
           <li>
-            <h1>Marketing Sector</h1>
-            <p>
+            <h1 class="font-bold text-xl">Marketing Sector</h1>
+            <p class="w-full font-normal text-lg text-wrap">
               Explore the design sector. Learn UI design , UX design, design
               system, design acceessibility and many more.
             </p>
-            <img src="/img/market_sec.jpg" alt="Design Sector" />
+            <img class="max-w-full rounded-xl object-cover" src="/img/market_sec.jpg" alt="Design Sector" />
           </li>
         </ul>
       </div>
     </section>
 
     <!-- FEATURE COURSES -->
-    <section class="featured_crs">
+    <section class="featured_crs strtlrn px-3 py-15 h-6/6 my-5 bg-[#f8f7f1]">
       <div class="feature_txt">
-        <h1>Featured courses</h1>
-        <p>
+        <h1 class="text-3xl font-bold w-full uppercase mb-0.5">Featured courses</h1> <br>
+        <p class="font-normal text-lg mb-8">
           Start your learning today. Explore all the categories and choose what
           the best for you.
         </p>
       </div>
 
       <div class="featured_crd">
-        <div class="main_card">
+        <div class="main_card shadow-xl bg-amber-10 h-auto p-2 rounded-2xl grid gap-3 my-10">
           <img
             src="/img/web_dev_course.jpg"
-            width="200vw"
+            class="aspect-6/4 object-cover rounded-2xl"
             alt="web dev courses"
           />
           <div class="txts">
@@ -159,150 +154,153 @@
             ></span>
             <h2>Web design course for the beginner to higher</h2>
             <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
-            <h3><img src="/img/sally.png" alt="" /> by Mark Allen</h3>
+            <h3 class="flex gap-2 font-bold text-lg items-center my-2"><img src="/img/sally.png" class="aspect-1.5/2 w-10 rounded-4xl" alt="" /> by Mark Allen</h3>
             <hr />
-            <p>
-              $50
-              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
-            </p>
-          </div>
-        </div>
-        <div class="main_card">
-          <img
-            src="/img/web_dev_course.jpg"
-            width="200vw"
-            alt="web dev courses"
-          />
-          <div class="txts">
-            <span>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i
-            ></span>
-            <h2>Web design course for the beginner to higher</h2>
-            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
-            <h3><img src="/img/sally.png" alt="" /> by Mark Allen</h3>
-            <hr />
-            <p>
-              $50
-              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
-            </p>
-          </div>
-        </div>
-        <div class="main_card">
-          <img
-            src="/img/web_dev_course.jpg"
-            width="200vw"
-            alt="web dev courses"
-          />
-          <div class="txts">
-            <span>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i
-            ></span>
-            <h2>Web design course for the beginner to higher</h2>
-            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
-            <h3><img src="/img/sally.png" alt="" /> by Mark Allen</h3>
-            <hr />
-            <p>
-              $50
-              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
-            </p>
-          </div>
-        </div>
-        <div class="main_card">
-          <img src="/img/web_dev_course.jpg" width="200vw alt="web dev courses">
-          <div class="txts">
-            <span>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i
-            ></span>
-            <h2>Web design course for the beginner to higher</h2>
-            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
-            <h3><img src="/img/sally.png" alt="" /> by Mark Allen</h3>
-            <hr />
-            <p>
-              $50
-              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
-            </p>
-          </div>
-        </div>
-        <div class="main_card">
-          <img src="/img/web_dev_course.jpg" width="200vw alt="web dev courses">
-          <div class="txts">
-            <span>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i
-            ></span>
-            <h2>Web design course for the beginner to higher</h2>
-            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
-            <h3><img src="/img/sally.png" alt="" /> by Mark Allen</h3>
-            <hr />
-            <p>
-              $50
-              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
-            </p>
-          </div>
-        </div>
-        <div class="main_card">
-          <img src="/img/web_dev_course.jpg" width="200vw alt="web dev courses">
-          <div class="txts">
-            <span>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i
-            ></span>
-            <h2>Web design course for the beginner to higher</h2>
-            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
-            <h3><img src="/img/sally.png" alt="" /> by Mark Allen</h3>
-            <hr />
-            <p>
+            <p class="flex justify-between font-bold p-2">
               $50
               <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
             </p>
           </div>
         </div>
       </div>
+  
+      <div class="featured_crd">
+        <div class="main_card shadow-xl bg-amber-10 h-auto p-2 rounded-2xl grid gap-3 my-10">
+          <img
+            src="/img/web_dev_course.jpg"
+            class="aspect-6/4 object-cover rounded-2xl"
+            alt="web dev courses"
+          />
+          <div class="txts">
+            <span>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i
+            ></span>
+            <h2>Web design course for the beginner to higher</h2>
+            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
+            <h3 class="flex gap-2 font-bold text-lg items-center my-2"><img src="/img/sally.png" class="aspect-1.5/2 w-10 rounded-4xl" alt="" /> by Mark Allen</h3>
+            <hr />
+            <p class="flex justify-between font-bold p-2">
+              $50
+              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="featured_crd">
+        <div class="main_card shadow-xl bg-amber-10 h-auto p-2 rounded-2xl grid gap-3 my-10">
+          <img
+            src="/img/web_dev_course.jpg"
+            class="aspect-6/4 object-cover rounded-2xl"
+            alt="web dev courses"
+          />
+          <div class="txts">
+            <span>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i
+            ></span>
+            <h2>Web design course for the beginner to higher</h2>
+            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
+            <h3 class="flex gap-2 font-bold text-lg items-center my-2"><img src="/img/sally.png" class="aspect-1.5/2 w-10 rounded-4xl" alt="" /> by Mark Allen</h3>
+            <hr />
+            <p class="flex justify-between font-bold p-2">
+              $50
+              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="featured_crd">
+        <div class="main_card shadow-xl bg-amber-10 h-auto p-2 rounded-2xl grid gap-3 my-10">
+          <img
+            src="/img/web_dev_course.jpg"
+            class="aspect-6/4 object-cover rounded-2xl"
+            alt="web dev courses"
+          />
+          <div class="txts">
+            <span>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i
+            ></span>
+            <h2>Web design course for the beginner to higher</h2>
+            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
+            <h3 class="flex gap-2 font-bold text-lg items-center my-2"><img src="/img/sally.png" class="aspect-1.5/2 w-10 rounded-4xl" alt="" /> by Mark Allen</h3>
+            <hr />
+            <p class="flex justify-between font-bold p-2">
+              $50
+              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="featured_crd">
+        <div class="main_card shadow-xl bg-amber-10 h-auto p-2 rounded-2xl grid gap-3 my-10">
+          <img
+            src="/img/web_dev_course.jpg"
+            class="aspect-6/4 object-cover rounded-2xl"
+            alt="web dev courses"
+          />
+          <div class="txts">
+            <span>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i
+            ></span>
+            <h2>Web design course for the beginner to higher</h2>
+            <h4>40 Class <i class="fa-solid fa-circle"></i> 3 Months</h4>
+            <h3 class="flex gap-2 font-bold text-lg items-center my-2"><img src="/img/sally.png" class="aspect-1.5/2 w-10 rounded-4xl" alt="" /> by Mark Allen</h3>
+            <hr />
+            <p class="flex justify-between font-bold p-2">
+              $50
+              <button><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+            </p>
+          </div>
+        </div>
+      </div>
+  
 
       <div class="lxtbtn">
-        <button>See All Course</button>
+        <button class="bg-amber-700 text-white font-normal px-4 py-2 rounded-4xl text-center">See All Course</button>
       </div>
     </section>
 
     <!-- MENTORS -->
-    <section class="mentors">
+    <section class="mentors strtlrn px-3 py-15 h-6/6 bg-[#0d2f3f] text-white">
       <div class="profiles">
-        <div class="jxtimg">
+        <div class="jxtimg grid grid-flow-col items-center  col-span-2 w-full mx-auto justify-between shadow-xl bg-amber-100 p-5 rounded-xl pb-0">
           <span
             ><img
               src="/img/mentor_1.png"
-              width="270vw"
+              class="aspect-1.5/3 w-30"
               height="220vh"
               alt="Mentor"
           /></span>
           <span
             ><img
               src="/img/mentor_2.png"
-              width="270vw"
+              class="aspect-1.5/4 w-35 "
               height="220vh"
               alt="Mentor"
           /></span>
         </div>
 
-        <div class="imgntxt">
-          <div class="men2">
+        <div class="imgntxt text-white">
+          <div class="men2  items-center">
             <img
               src="/img/mentor_2.png"
-              width="240vw"
+              width="240vw" class="mx-auto my-3"
               height="300vh"
               alt="Liam Dawson"
             />
-            <p><strong>Liam Dawson</strong> <br /><em>Digital Marketer</em></p>
+            <p class="text-center"><strong>Liam Dawson</strong> <br /><em>Digital Marketer</em></p>
           </div>
-          <div class="imgntxt_footer">
+          <div class="imgntxt_footer my-3 flex justify-between">
             <span
               ><i class="fa-brands fa-square-facebook"></i>
               <i class="fa-brands fa-square-twitter"></i>
@@ -315,65 +313,65 @@
         </div>
       </div>
 
-      <div class="mentxt">
+      <div class="mentxt text-center grid">
         <h1>Meet with our mentors</h1>
         <p>
           We're different from other education platforms - we take a creative
           approach to teaching skills
         </p>
-        <a href="#">See all Profile</a>
+        <a href="#" class="bg-amber-800 text-lg px-4 py-2 text-white rounded-full">See all Profile</a>
       </div>
     </section>
 
-    <section class="fewwords">
-      <div class="few_txt">
-        <h1>Few Words</h1>
+    <section class="fewwords strtlrn px-3 py-15 h-6/6 my-2 bg-amber-100 text-[#0d2f3f]">
+      <div class="few_txt text-center mb-10">
+        <h1 class="font-bold text-4xl">Few Words</h1>
         <p>
           Start your learning today. Explore all the categories and choose what
           the best for you.
         </p>
       </div>
 
-      <div class="few_pros">
-        <div class="pros">
-          <span
-            ><img src="/img/edwin.png" width="120vw" height="120w" alt="" />
+      <div class="few_pros grid w-full gap-4">
+        <div class="pros w-full h-auto bg-white rounded-2xl shadow-2xl p-5 grid gap-5">
+          <span class="flex justify-between"
+            ><img src="/img/edwin.png" alt="" class="rounded-full bg-amber-700 px-2 aspect-2/2 w-20 object-cover" />
             <span><i class="fa-regular fa-star"> </i> 5.0</span></span
           >
-          <h3>Edwin Reyes <br /><em>Student of web design</em></h3>
+          <h3 class="font-bold">Edwin Reyes <br /><em>Student of web design</em></h3>
           <p>
             " i have loved that it's giving me the opportunity to learn at my
             own pace and it's also super cost effective. This is the best
             platform i have ever seen!
           </p>
-          <h2><i class="fa-solid fa-quote-left"></i></h2>
+          <h2 class="text-7xl text-amber-700"><i class="fa-solid fa-quote-left"></i></h2>
         </div>
-        <div class="pros">
-          <span
-            ><img src="/img/edwin.png" width="120vw" height="120w" alt="" />
+        <div class="pros w-full h-auto bg-white rounded-2xl shadow-2xl p-5 grid gap-5">
+          <span class="flex justify-between"
+            ><img src="/img/edwin.png" alt="" class="rounded-full bg-amber-700 px-2 aspect-2/2 w-20 object-cover" />
             <span><i class="fa-regular fa-star"> </i> 5.0</span></span
           >
-          <h3>Edwin Reyes <br /><em>Student of web design</em></h3>
+          <h3 class="font-bold">Edwin Reyes <br /><em>Student of web design</em></h3>
           <p>
             " i have loved that it's giving me the opportunity to learn at my
             own pace and it's also super cost effective. This is the best
             platform i have ever seen!
           </p>
-          <h2><i class="fa-solid fa-quote-left"></i></h2>
+          <h2 class="text-7xl text-amber-700"><i class="fa-solid fa-quote-left"></i></h2>
         </div>
       </div>
     </section>
 
     <!-- BECOME AN INSTRUCTOR -->
-    <section class="bcm_inst">
-      <div class="bcm_txt">
-        <h1>Become an instructor</h1>
-        <p>
+    <section class="bcm_inst text-center strtlrn px-3 py-15 h-6/6 my-2">
+      <div class="bcm_txt grid gap-2">
+        <h1 class="font-bold text-3xl tracking-tight">Become an instructor</h1>
+        <p class="tracking-tight text-lg">
           Instructo from around the world teach millions of students on our
           platform. We provide the tools and skills to teach what you love
         </p>
 
-        <a href="#">Start Teaching</a>
+        <a href="#" class="bg-amber-700 font-normal text-white rounded-full px-4 py-2">Start Teaching</a>
       </div>
 
       <div class="bcm_img">
@@ -382,96 +380,97 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="fttr">
+    <footer class="fttr strtlrn px-3 py-15 h-6/6 my-2 bg-gray-700 text-white grid">
       <div class="frstface">
         <div class="nwslltt">
-          <h1>
+          <h1 class="text-center font-bold tracking-tight text-3xl">
             Newsletter
-            <p>
+            <p class="font-normal text-lg ">
               Start your learning today. Explore all the categories and choose
               what the best for you
             </p>
           </h1>
         </div>
 
-        <form action="">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <button>Get Started</button>
+        <form action="" class="grid gap-2 w-full my-5">
+          <input class="px-4 py-2 bg-white  text-black rounded-full" type="text" placeholder="Name" />
+          <input class="px-4 py-2 bg-white  text-black rounded-full" type="email" placeholder="Email" />
+          <button class="px-4 py-2 bg-amber-700  text-black rounded-full">Get Started</button>
         </form>
 
-        <ul class="wwnotify">
-          <li>
+        <ul class="wwnotify grid md:grid-cols-3  w-full my-5">
+          <li class="flex gap-3">
             <span><i class="fa-solid fa-circle-check"></i></span>
             <p>We eill notify you the latest update of our site</p>
           </li>
-          <li>
+          <li class="flex gap-3">
             <span><i class="fa-solid fa-circle-check"></i></span>
             <p>We eill notify you the latest update of our site</p>
           </li>
-          <li>
+          <li class="flex gap-3">
             <span><i class="fa-solid fa-circle-check"></i></span>
             <p>We eill notify you the latest update of our site</p>
           </li>
+         
         </ul>
       </div>
 
       <div class="finalfftter">
-        <ul class="fnul">
-          <li>
+        <ul class="fnul grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-5">
+          <li class="font-bold text-xl tracking-tight">
             Explore
             <ul>
-              <li>Pricing</li>
-              <li>Updates</li>
-              <li>Beta</li>
-              <li>Newsletter</li>
-              <li>Collaboration</li>
+              <li class="font-normal text-lg tracking-tight">Pricing</li>
+              <li class="font-normal text-lg tracking-tight">Updates</li>
+              <li class="font-normal text-lg tracking-tight">Beta</li>
+              <li class="font-normal text-lg tracking-tight">Newsletter</li>
+              <li class="font-normal text-lg tracking-tight">Collaboration</li>
             </ul>
           </li>
 
-          <li>
+          <li class="font-bold text-xl tracking-tight">
             Product
             <ul>
-              <li>Business</li>
-              <li>Designs</li>
-              <li>Classrooms</li>
-              <li>Newcomeres</li>
+              <li class="font-normal text-lg tracking-tight">Business</li>
+              <li class="font-normal text-lg tracking-tight">Designs</li>
+              <li class="font-normal text-lg tracking-tight">Classrooms</li>
+              <li class="font-normal text-lg tracking-tight">Newcomeres</li>
             </ul>
           </li>
 
-          <li>
+          <li class="font-bold text-xl tracking-tight">
             Learning
             <ul>
-              <li>Course</li>
-              <li>Manuals</li>
-              <li>Tutorials</li>
-              <li>Communities</li>
+              <li class="font-normal text-lg tracking-tight">Course</li>
+              <li class="font-normal text-lg tracking-tight">Manuals</li>
+              <li class="font-normal text-lg tracking-tight">Tutorials</li>
+              <li class="font-normal text-lg tracking-tight">Communities</li>
             </ul>
           </li>
 
-          <li>
+          <li class="font-bold text-xl tracking-tight">
             Resources
             <ul>
-              <li>Tutorials</li>
-              <li>Editorials</li>
-              <li>Product</li>
-              <li>Newsroom</li>
+              <li class="font-normal text-lg tracking-tight">Tutorials</li>
+              <li class="font-normal text-lg tracking-tight">Editorials</li>
+              <li class="font-normal text-lg tracking-tight">Product</li>
+              <li class="font-normal text-lg tracking-tight">Newsroom</li>
             </ul>
           </li>
 
-          <li>
+          <li class="font-bold text-xl tracking-tight">
             About
             <ul>
-              <li>Company</li>
-              <li>Careers</li>
-              <li>Legal</li>
-              <li>Help</li>
+              <li class="font-normal text-lg tracking-tight">Company</li>
+              <li class="font-normal text-lg tracking-tight">Careers</li>
+              <li class="font-normal text-lg tracking-tight">Legal</li>
+              <li class="font-normal text-lg tracking-tight">Help</li>
             </ul>
           </li>
         </ul>
 
-        <div class="fnlogo">
-          <span><i class="fa-solid fa-book-open"></i></span>
+        <div class="fnlogo my-5">
+          <span class="text-3xl"><i class="fa-solid fa-book-open"></i></span>
           <h2>Educare</h2>
           <p>&copy; 2021 UI HUT Agency. All right reserved.</p>
           <span

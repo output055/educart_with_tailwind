@@ -1,1 +1,7 @@
-@import 'tailwindcss'
+@import "tailwindcss";
+
+@theme {
+  --color-textcolor: #0d2f3f;
+  --color-bacgroundcolor: #f8f7f1;
+  --color-navhover: #f26440;
+}
